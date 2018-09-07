@@ -94,6 +94,14 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
+      // fixes for linking repos with these peerDeps
+      'react-redux': path.resolve(paths.appNodeModules + '/react-redux'),
+      'styled-components': path.resolve(
+        paths.appNodeModules + '/styled-components'
+      ),
+      'ba-react': path.resolve(paths.appNodeModules + '/ba-react'),
+      react: path.resolve(paths.appNodeModules + '/react'),
+      'react-dom': path.resolve(paths.appNodeModules + '/react-dom'),
       // @remove-on-eject-begin
       // Resolve Babel runtime relative to react-scripts.
       // It usually still works on npm 3 without this but it would be
