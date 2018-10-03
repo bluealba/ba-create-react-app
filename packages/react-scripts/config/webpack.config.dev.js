@@ -233,7 +233,7 @@ module.exports = {
             loader: require.resolve('babel-loader'),
             options: {
               customize: require.resolve(
-                'babel-preset-react-app/webpack-overrides'
+                '@bluealba/babel-preset-react-app/webpack-overrides'
               ),
               // @remove-on-eject-begin
               babelrc: false,
@@ -283,7 +283,9 @@ module.exports = {
               compact: false,
               presets: [
                 [
-                  require.resolve('babel-preset-react-app/dependencies'),
+                  require.resolve(
+                    '@bluealba/babel-preset-react-app/dependencies'
+                  ),
                   { helpers: true },
                 ],
               ],
@@ -293,9 +295,9 @@ module.exports = {
               // @remove-on-eject-begin
               cacheIdentifier: getCacheIdentifier('development', [
                 'babel-plugin-named-asset-import',
-                'babel-preset-react-app',
+                '@bluealba/babel-preset-react-app',
                 'react-dev-utils',
-                'react-scripts',
+                '@bluealba/react-scripts',
               ]),
               // @remove-on-eject-end
               // If an error happens in a package, it's possible to be
