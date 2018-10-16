@@ -291,7 +291,7 @@ module.exports = {
             loader: require.resolve('babel-loader'),
             options: {
               customize: require.resolve(
-                'babel-preset-react-app/webpack-overrides'
+                '@bluealba/babel-preset-react-app/webpack-overrides'
               ),
               // @remove-on-eject-begin
               babelrc: false,
@@ -339,7 +339,9 @@ module.exports = {
               compact: false,
               presets: [
                 [
-                  require.resolve('@bluealba/babel-preset-react-app/dependencies'),
+                  require.resolve(
+                    '@bluealba/babel-preset-react-app/dependencies'
+                  ),
                   { helpers: true },
                 ],
               ],
