@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@bluealba/babel-preset-react-app": "^4.0.0",
-    "@bluealba/eslint-config-react-app": "^3.0.0",
+    "@bluealba/eslint-config-react-app": "^3.0.1",
     "@babel/core": "7.1.0",
     "@svgr/webpack": "2.4.1",
     "babel-core": "7.0.0-bridge.0",
