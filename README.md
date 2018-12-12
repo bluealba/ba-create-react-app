@@ -1,4 +1,4 @@
-# Blue Abla - Create React App
+# Blue Alba - Create React App
 
 This is a fork of [Create React App](https://github.com/facebookincubator/create-react-app/). Please refer to their docs for more in-depth details.
 
