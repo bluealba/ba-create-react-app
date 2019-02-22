@@ -1,11 +1,11 @@
 {
   "name": "@bluealba/react-scripts",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebook/create-react-app",
   "license": "MIT",
   "engines": {
-    "node": ">=8.10"
+    "node": ">=6"
   },
   "bugs": {
     "url": "https://github.com/facebook/create-react-app/issues"
@@ -25,7 +25,7 @@
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@bluealba/babel-preset-react-app": "^7.0.0",
-    "@bluealba/eslint-config-react-app": "^3.1.0",
+    "@bluealba/eslint-config-react-app": "^3.1.1",
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
     "babel-core": "7.0.0-bridge.0",
@@ -48,6 +48,7 @@
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "^1.2.0",
     "file-loader": "2.0.0",
+    "fork-ts-checker-webpack-plugin-alt": "0.4.14",
     "fs-extra": "7.0.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",

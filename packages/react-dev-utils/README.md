@@ -325,7 +325,7 @@ printHostingInstructions(appPackage, publicUrl, publicPath, 'build', true);
 
 Returns a Promise resolving to either `defaultPort` or next available port if the user confirms it is okay to do. If the port is taken and the user has refused to use another port, or if the terminal is not interactive and can’t present user with the choice, resolves to `null`.
 
-##### `createCompiler(args: Object): WebpackCompiler`
+##### `createCompiler(webpack: Function, config: Object, appName: string, urls: Object, useYarn: boolean): WebpackCompiler`
 
 Creates a Webpack compiler instance for WebpackDevServer with built-in helpful messages.
 

@@ -232,7 +232,7 @@ module.exports = {
 
     'react-hooks/rules-of-hooks': 'error',
     // https://github.com/facebook/react/issues/14920
-    // 'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'warn',
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     'jsx-a11y/accessible-emoji': 'warn',
