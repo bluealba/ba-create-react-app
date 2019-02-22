@@ -11,13 +11,14 @@ npx create-react-app my-app --scripts-verion @bluealba/react-scripts
 cd my-app
 npm start
 ```
+
 Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
 You can also check out [http://localhost:8888/](http://localhost:8888/) to see the Bundle Analyzer.<br>
 When you’re ready to deploy to production, create a minified bundle with `npm run build`.
 
 ## Creating an App
 
-**You’ll need to have Node >= 6 on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
+**You’ll need to have Node 8.10.0 or later on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
 
 To create a new app, you may choose one of the following methods:
 
@@ -27,21 +28,23 @@ To create a new app, you may choose one of the following methods:
 npx create-react-app my-app --scripts-verion @bluealba/react-scripts
 ```
 
-*([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))*
+_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
 ### npm
 
 ```sh
 npm init react-app my-app
 ```
-*`npm init <initializer>` is available in npm 6+*
+
+_`npm init <initializer>` is available in npm 6+_
 
 ### Yarn
 
 ```sh
 yarn create react-app my-app
 ```
-*`yarn create` is available in Yarn 0.25+*
+
+_`yarn create` is available in Yarn 0.25+_
 
 It will create a directory called `my-app` inside the current folder.<br>
 Inside that directory, it will generate the initial project structure and install the transitive dependencies:
@@ -97,7 +100,7 @@ You will see the build errors and lint warnings in the console.
 Runs the test watcher in an interactive mode.<br>
 By default, runs tests related to files changed since the last commit.
 
-[Read more about testing.](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
+[Read more about testing.](https://facebook.github.io/create-react-app/docs/running-tests)
 
 ### `npm run build` or `yarn build`
 

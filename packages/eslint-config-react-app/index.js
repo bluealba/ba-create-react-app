@@ -28,7 +28,14 @@ module.exports = {
 
   parser: 'babel-eslint',
 
-  plugins: ['import', 'flowtype', 'jsx-a11y', 'react', 'prettier'],
+  plugins: [
+    'import',
+    'flowtype',
+    'jsx-a11y',
+    'react',
+    'prettier',
+    'react-hooks',
+  ],
 
   env: {
     browser: true,
@@ -44,6 +51,12 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
+    },
+  },
+
+  settings: {
+    react: {
+      version: 'detect',
     },
   },
 
@@ -169,13 +182,13 @@ module.exports = {
         object: 'require',
         property: 'ensure',
         message:
-          'Please use import() instead. More info: https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#code-splitting',
+          'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting',
       },
       {
         object: 'System',
         property: 'import',
         message:
-          'Please use import() instead. More info: https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#code-splitting',
+          'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting',
       },
     ],
     'getter-return': 'warn',
@@ -212,9 +225,14 @@ module.exports = {
     'react/no-unescaped-entities': 'warn',
     'react/no-unknown-property': 'warn',
     'react/prop-types': 'warn',
+    'react/no-typos': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
     'react/style-prop-object': 'warn',
+
+    'react-hooks/rules-of-hooks': 'error',
+    // https://github.com/facebook/react/issues/14920
+    // 'react-hooks/exhaustive-deps': 'warn',
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     'jsx-a11y/accessible-emoji': 'warn',
