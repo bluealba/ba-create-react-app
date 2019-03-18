@@ -1,6 +1,6 @@
 {
   "name": "@bluealba/eslint-config-react-app",
-  "version": "3.1.1",
+  "version": "3.1.3",
   "description": "ESLint configuration used by Create React App",
   "repository": "facebook/create-react-app",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "^1.2.0"
+    "eslint-plugin-react-hooks": "^1.5.1"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.5"
